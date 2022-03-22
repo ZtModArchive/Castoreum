@@ -1,0 +1,13 @@
+language: csharp
+mono: none
+dotnet: 5.0.302
+solution: Castoreum.sln
+before_install:
+ - dotnet --info
+install:
+ - dotnet restore
+ - dotnet tool install dotnet-format
+script:
+ - dotnet test
+ - dotnet dotnet-format --check
+ - dotnet publish

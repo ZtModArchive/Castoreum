@@ -8,8 +8,6 @@ namespace Castoreum.Interface.Service.Watch
 {
     public interface IProcessWatcher
     {
-        void LaunchProcess();
-        void EndProcess();
-        void Watch();
+        void Watch(string program, string arg);
     }
 }
