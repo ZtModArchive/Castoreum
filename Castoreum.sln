@@ -9,13 +9,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Castoreum.Installation", "C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Castoreum.Watch", "Castoreum.Watch\Castoreum.Watch.csproj", "{6ABA49E7-B5D2-4D46-BD97-5C93875C5E2A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Castoreum.Builder", "Castoreum.Builder\Castoreum.Builder.csproj", "{D0494078-94AE-480B-8E7F-A0DB5AD17C8C}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Castoreum.Config", "Castoreum.Config\Castoreum.Config.csproj", "{B2145345-8F51-4468-9E92-E82811CC76BA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Castoreum.Interface", "Castoreum.Interface\Castoreum.Interface.csproj", "{7C4CADB7-F660-423B-82D1-F4F95071A8C3}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Castoreum.Tests", "Castoreum.Tests\Castoreum.Tests.csproj", "{82F0844E-E942-4292-AF4F-87C6E4C173D7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +31,6 @@ Global
 		{6ABA49E7-B5D2-4D46-BD97-5C93875C5E2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6ABA49E7-B5D2-4D46-BD97-5C93875C5E2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6ABA49E7-B5D2-4D46-BD97-5C93875C5E2A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D0494078-94AE-480B-8E7F-A0DB5AD17C8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D0494078-94AE-480B-8E7F-A0DB5AD17C8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D0494078-94AE-480B-8E7F-A0DB5AD17C8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D0494078-94AE-480B-8E7F-A0DB5AD17C8C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B2145345-8F51-4468-9E92-E82811CC76BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B2145345-8F51-4468-9E92-E82811CC76BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2145345-8F51-4468-9E92-E82811CC76BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -47,10 +39,6 @@ Global
 		{7C4CADB7-F660-423B-82D1-F4F95071A8C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C4CADB7-F660-423B-82D1-F4F95071A8C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C4CADB7-F660-423B-82D1-F4F95071A8C3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{82F0844E-E942-4292-AF4F-87C6E4C173D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{82F0844E-E942-4292-AF4F-87C6E4C173D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{82F0844E-E942-4292-AF4F-87C6E4C173D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{82F0844E-E942-4292-AF4F-87C6E4C173D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

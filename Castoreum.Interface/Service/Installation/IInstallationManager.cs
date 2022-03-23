@@ -4,8 +4,10 @@ namespace Castoreum.Interface.Service.Installation
 {
     public interface IInstallationManager
     {
-        void InstallDependency(string packageName, IConfig config);
-        void InstallDevDependency(string packageName, IConfig config);
-        void RemoveDependency(string packageName, IConfig config);
+        IConfig InstallDependency(IConfig config, string packageName);
+        IConfig InstallDevDependency(IConfig config, string packageName);
+        void InstallPackage(string packageName);
+        IConfig RemoveDependency(IConfig config, string packageName);
+        IConfig RemoveDevDependency(IConfig config, string packageName);
     }
 }

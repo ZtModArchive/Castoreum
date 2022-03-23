@@ -6,7 +6,6 @@ namespace Castoreum.Interface.Service.Compression
 {
     public interface ICompressionManager
     {
-        void CreateArchive(ZipArchive archive, IConfig config, DirectoryInfo directoryInfo);
-        void AddToArchive(ZipArchive archive, IConfig config, DirectoryInfo directoryInfo);
+        void BuildMod(ZipArchive archive, IConfig config, DirectoryInfo directoryInfo);
     }
 }

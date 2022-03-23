@@ -4,4 +4,14 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="System.Linq" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Castoreum.Config\Castoreum.Config.csproj" />
+    <ProjectReference Include="..\Castoreum.Interface\Castoreum.Interface.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -1,7 +1,8 @@
 ﻿using Castoreum.Config.Models;
 using Castoreum.Interface.Service.Config;
-using System;
+using Newtonsoft.Json.Linq;
 using System.IO;
+using System.Text.Json;
 
 namespace Castoreum.Config.Service
 {
@@ -17,12 +18,14 @@ namespace Castoreum.Config.Service
 
         public IConfig GetConfig(string file)
         {
-            throw new NotImplementedException();
+            string castorConfigText = File.ReadAllText(file);
+            return JsonSerializer.Deserialize<CastorConfig>(castorConfigText);
         }
 
-        public void PlaceConfigFile(IConfig config)
+        public void PlaceConfigFile(IConfig config, string fileName)
         {
-            throw new NotImplementedException();
+            string newJson = JToken.Parse(JsonSerializer.Serialize(config)).ToString();
+            File.WriteAllText(fileName, newJson);
         }
 
         public void PlaceGitIgnore(string path)
