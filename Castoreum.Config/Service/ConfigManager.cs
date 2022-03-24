@@ -30,11 +30,9 @@ namespace Castoreum.Config.Service
 
         public void PlaceGitIgnore(string path)
         {
-            using (File.Create(".gitignore"))
-
             File.WriteAllText(
                 ".gitignore",
-                "# exclude file types\n*.zip\n*.z2f\n\n# exclude modules\nmodules/"
+                "# exclude files\n*.zip\n*.z2f\ncastorlog.txt\n\n# exclude modules\nmodules/"
             );
         }
     }

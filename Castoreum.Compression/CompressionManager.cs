@@ -35,7 +35,7 @@ namespace Castoreum.Compression
                         exclude = true;
                 }
 
-                foreach (var dependencyPath in config.Dependencies)
+                foreach (var dependencyPath in config.DevDependencies)
                 {
                     if (subDirectoryPath == dependencyPath || subDirectoryPath == dependencyPath.Replace('/', '\\'))
                         exclude = true;

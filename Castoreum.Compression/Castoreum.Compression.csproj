@@ -1,11 +1,28 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageIcon>castoreum-icon.png</PackageIcon>
+    <PackageIconUrl />
+    <RepositoryUrl>https://github.com/ZtModArchive/Castoreum</RepositoryUrl>
+    <PackageTags>ZooTycoon2</PackageTags>
+    <Copyright>MIT License</Copyright>
+    <PackageProjectUrl>https://github.com/ZtModArchive/Castoreum</PackageProjectUrl>
+    <Authors>ZtModArchive</Authors>
+    <Description />
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Castoreum.Interface\Castoreum.Interface.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\Downloads\500w\castoreum-icon.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
