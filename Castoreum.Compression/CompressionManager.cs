@@ -16,17 +16,16 @@ namespace Castoreum.Compression
             var files = directoryInfo.GetFiles();
             foreach (var file in files)
             {
-                if (config.Type == "module" || config.Type == "package")
-                {
-                    CompressionLevel compressionLevel;
-                    if (file.Extension.ToLower().Contains("jpg") || file.Extension.ToLower().Contains("jpeg"))
-                        compressionLevel = CompressionLevel.NoCompression;
-                    else
-                        compressionLevel = CompressionLevel.Fastest;
+                CompressionLevel compressionLevel;
+                if (file.Extension.ToLower().Contains("jpg") || file.Extension.ToLower().Contains("jpeg"))
+                    compressionLevel = CompressionLevel.NoCompression;
+                else
+                    compressionLevel = CompressionLevel.Fastest;
 
+                if (config.Type == "module" || config.Type == "package")
                     archive.CreateEntryFromFile(file.FullName, $"modules\\{config.RepoName}\\{formattedPath}\\{file.Name}", compressionLevel);
-                }
-                archive.CreateEntryFromFile(file.FullName, $"{formattedPath}\\{file.Name}");
+
+                archive.CreateEntryFromFile(file.FullName, $"{formattedPath}\\{file.Name}", compressionLevel);
             }
             var directories = directoryInfo.GetDirectories();
             bool exclude;
