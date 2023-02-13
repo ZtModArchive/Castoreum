@@ -33,9 +33,10 @@ namespace Castoreum.Config.Models
                 "tourdata",
                 "ui",
                 "world",
-                "xpinfo"
+                "xpinfo",
+                "modules"
             };
-        public IEnumerable<string> ExcludeFolders { get; set; }
+        public IEnumerable<string> ExcludeFolders { get; set; } = new List<string>();
         public IEnumerable<string> Dependencies { get; set; } = new List<string>();
         public IEnumerable<string> DevDependencies { get; set; } = new List<string>();
     }
